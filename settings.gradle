@@ -1,1 +1,1 @@
-include ':app', ':adapter-helper', ':library'
+include ':app', ':adapter-helper', ':base-adapter-helper'

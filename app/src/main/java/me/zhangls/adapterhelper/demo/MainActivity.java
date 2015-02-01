@@ -4,11 +4,11 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.widget.ListView;
 
+import com.joanzapata.android.BaseAdapterHelper;
+import com.joanzapata.android.QuickAdapter;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import me.zhangls.adapter.helper.BaseAdapterHelper;
-import me.zhangls.adapter.helper.QuickAdapter;
 
 
 public class MainActivity extends ActionBarActivity {
