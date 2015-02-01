@@ -16,7 +16,7 @@ repositories {
     jcenter()
 }
 
-group = 'com.bintray.example'
+group = 'me.zhangls'
 version = '1.0'
 
 apply plugin: 'com.android.library'
@@ -41,24 +41,25 @@ android {
     }
 }
 
-
-def siteUrl = 'https://github.com/bintray/bintray-examples'
-def gitUrl = 'https://github.com/bintray/bintray-examples.git'
+def libraryName = 'base-adapter-helper'
+def libraryDesc = 'Abstraction for the usual BaseAdapter "ViewHolder" patternn' +
+        'http://joanzapata.com/base-adapter-helper/'
+def siteUrl = 'https://github.com/ihrthk/AdapterHelper'
 
 bintray {
-    user = 'ihrthk'
-    key = '7007a273af223167f95e947e86d63cdd9a49c2e2'
+    user = ''
+    key = ''
 
     configurations = ['archives'] //When uploading configuration files
     pkg {
-        repo = 'android'
-        name = project.name
-        desc = 'Bintray aar publishing example'
+        repo = 'android-library'
+        name = libraryName
+        desc = libraryDesc
         websiteUrl = siteUrl
-        issueTrackerUrl = 'https://github.com/bintray/bintray-examples/issues'
-        vcsUrl = gitUrl
+        issueTrackerUrl = siteUrl
+        vcsUrl = siteUrl
         licenses = ['Apache-2.0']
-        labels = ['aar', 'android', 'example']
+        labels = ['aar', 'android', 'baseadapter','helper']
         publicDownloadNumbers = true
     }
 }
@@ -68,7 +69,7 @@ install {
         pom {
             project {
                 packaging 'aar'
-                name 'Bintray publish Gradle aar example'
+                name libraryName
                 url siteUrl
                 licenses {
                     license {
@@ -78,14 +79,14 @@ install {
                 }
                 developers {
                     developer {
-                        id 'jbaruch'
-                        name 'Baruch Sadogursky'
-                        email 'jbaruch@jfrog.com'
+                        id 'ihrthk'
+                        name 'zhangls'
+                        email 'ihrthk@gmail.com'
                     }
                 }
                 scm {
-                    connection 'https://github.com/bintray/bintray-examples.git'
-                    developerConnection 'https://github.com/bintray/bintray-examples.git'
+                    connection siteUrl
+                    developerConnection siteUrl
                     url siteUrl
 
                 }
