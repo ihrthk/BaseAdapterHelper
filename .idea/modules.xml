@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AdapterHelper.iml" filepath="$PROJECT_DIR$/AdapterHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BaseAdapterHelper.iml" filepath="$PROJECT_DIR$/BaseAdapterHelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/adapter-helper/adapter-helper.iml" filepath="$PROJECT_DIR$/adapter-helper/adapter-helper.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/base-adapter-helper/base-adapter-helper.iml" filepath="$PROJECT_DIR$/base-adapter-helper/base-adapter-helper.iml" />
