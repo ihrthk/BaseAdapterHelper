@@ -103,10 +103,10 @@ public abstract class BaseQuickAdapter<T, H extends BaseAdapterHelper> extends B
             return helper.getView();
         }
 
-        return createIndeterminateProgressView(convertView, parent);
+        return createIndeterminateProgressView(position, convertView, parent);
     }
 
-    private View createIndeterminateProgressView(View convertView, ViewGroup parent) {
+    public View createIndeterminateProgressView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
             FrameLayout container = new FrameLayout(context);
             container.setForegroundGravity(Gravity.CENTER);
